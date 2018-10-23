@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+/.idea
+
+# testing
+/coverage
+
+# production
+/build
+
+Gulp install instructions.txt
+testfile.txt
+/dist/
