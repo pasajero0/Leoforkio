@@ -9,6 +9,7 @@ const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 const concat = require('gulp-concat')
 const babel = require('gulp-babel')
+const gulpSequence = require('gulp-sequence')
 
 gulp.task('clean', () =>
  	gulp.src('./dist', {
@@ -50,12 +51,12 @@ gulp.task('imagemin', () =>
 	  .pipe(gulp.dest('./dist/img'))
 )
 
-gulp.task('build', ['sass', 'minjs', 'imagemin'], () => {
+gulp.task('makedist', ['sass', 'minjs', 'imagemin'], () => {
 	gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'))
 	
 })
 
-gulp.task('dev', ['build'], () => {
+gulp.task('devserver', ['makedist'], () => {
 	browserSync.init({
     server: "./"
 	})
@@ -63,3 +64,6 @@ gulp.task('dev', ['build'], () => {
 	gulp.watch('./src/scss/*.scss', ['sass']).on('change', browserSync.reload)
 	gulp.watch('./index.html').on('change', browserSync.reload)
 })
+
+gulp.task('build', gulpSequence('clean', 'makedist'))
+gulp.task('dev', gulpSequence('clean', 'devserver'))
