@@ -3,6 +3,7 @@ $second_font: 'Lato', sans-serif;
 $main_color: #27262a;
 $violet: #8d81ac;
 
+@import 'reset';
 @import 'vars';
 @import 'normalize';
 @import 'global';
@@ -11,4 +12,5 @@ $violet: #8d81ac;
 @import 'slick';
 @import 'slick-theme';
 @import 'feedback';
+@import 'callback';
 @import 'footer';

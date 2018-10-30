@@ -1,8 +1,6 @@
 .whatYouGet {
     background-color: #f4f4f4;
-
-
-
+    
     &_header {
         margin: 0 auto;
         font-weight: bold;
@@ -41,7 +39,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -58,7 +56,7 @@
     }
 
     .whatYouGetBlock_info {
-        overflow: hidden;
+        overflow-x: hidden;
         padding-left: 30px;
     }
 
@@ -84,7 +82,7 @@
     }
 
     .whatYouGetBlock_info {
-        overflow: hidden;
+        overflow-x: hidden;
         padding-left: 40px;
     }
 
@@ -101,7 +99,7 @@
 @media only screen and (min-width: 993px) {
     .whatYouGet {
         padding-top: 100px;
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
         height: 720px;
 
@@ -126,7 +124,7 @@
     }
 
     .whatYouGetBlock_info {
-        overflow: hidden;
+        overflow-x: hidden;
         padding-left: 40px;
     }
 
