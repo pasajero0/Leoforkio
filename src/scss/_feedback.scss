@@ -1,28 +1,120 @@
 .feedback {
-    background-color: #ffffff;
-    // height: 300px;
-
-    .carousel {
-        margin: 0 auto;
-        padding-top: 60px;
-        width: 70%;
-
-        &_img {
-            border-radius: 50%;
-            width: 30%;
-        }
-
-        &_personname {
-            display: block;
-        }
-
-        &_feedback {
-            text-align: center;
-            color: red;
-
-        }
+  background-color: #fff;
+  .container {
+    padding-bottom: 0;
+  }
+  .slider {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 70%;
+    
+    .slide{
+    margin-bottom: 40px;  
+    outline: none;
+    }
+    &__img {
+      border-radius: 50%;
+      width: 20%;
     }
 
-    /*slick carousel */
+    &__personname {
+      display: block;
+    }
 
+    &__comment {
+      text-align: center;
+      color: #333;
+    }
+    &__link {
+      color: $violet;
+      outline: none;
+      text-decoration: none;
+    }
+    &__line {
+      height: 1px;
+      background: #f4f4f4;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.followUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // border-top: 1px solid #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  &__btn {
+    width: 240px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: 0 20px;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  &__text {
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+  }
+
+  &_theme_git {
+    background-color: #f3f3f3;
+    color: #333;
+
+    &:hover {
+      background-color: #2b414d;
+      color: #fff;
+      border: 1px solid transparent;
+    }
+  }
+
+  &_theme_twitter {
+    background-color: #26a6d1;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #fff;
+      color: #26a6d1;
+      border: 1px solid #26a6d1;
+    }
+  }
+
+  &_theme_fb {
+    background-color: #3b5998;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #fff;
+      color: #3b5998;
+      border: 1px solid #3b5998;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.fab {
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+
+.counter {
+  padding: 18px 0;
+  font-size: 14px;
+  color: #848e97;
+  font-weight: 400;
 }

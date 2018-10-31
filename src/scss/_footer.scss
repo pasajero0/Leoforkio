@@ -1,9 +1,19 @@
+//=======================================//
+.container {
+	max-width: 1200px;
+	padding: 40px 10px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+//=======================================//
+
 .footer {
 	background: #fff;
-	padding-top: 40px;
-	padding-bottom: 50px;
-	.container {
-		margin: 0 20px;
+	.container :nth-child(odd) {
+		margin-left: 0;
+	}
+	.container :nth-child(even) {
+		margin-right: 0;
 	}
 }
 .footer__title {
@@ -84,12 +94,7 @@
 	width: 290px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	// .footer__block{
-	// 	width: 320px;
-	// }
-}
-@media only screen and (min-width: 768px) and (max-width: 990px) {
+@media only screen and (min-width: 481px) and (max-width: 992px) {
 	.footer .container{
 		display: flex;
 		justify-content: space-around;
@@ -98,10 +103,18 @@
 	}
 	.footer__block{
 		@include footerblock;
-		margin: 0 22px;
+		margin: 0 35px;
+	}
+	@media only screen and (max-width: 680px){
+		.footer__block{
+		@include footerblock;
+		width: 215px;
+		margin: 0 7px;
+	}
 	}
 }
-@media only screen and (min-width: 990px){
+
+@media only screen and (min-width: 993px) {
 	.footer .container{
 		display: flex;
 		justify-content: space-between;

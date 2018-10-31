@@ -22,3 +22,13 @@ ul, li {
 	padding: 0;
 	list-style: none;
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+@media only screen and (max-width: 400px) {}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {}
+
+@media only screen and (min-width: 993px) {}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
