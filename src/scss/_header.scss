@@ -1,12 +1,10 @@
-
-
 .header {
 	background-color: $main_color;
-//	font: "Awesome";
-
 }
 
-
+.header__logo{
+	cursor: pointer;
+}
 
 .header__inner {
 	display: flex;
@@ -15,23 +13,35 @@
 	height: 100px;
 }
 
+.header__logo-link {
+display: inline-block;
+line-height: 16px;
+transition: all, .3s;
+height: 45px;
+width: 151px;
+
+
+}
+.header__logo:hover {
+	.header__logo-link {
+		content: url(../../dist/img/Forkio_hover.png);
+	}
+	}
+
+
 .header__menu {
 	margin-left: auto;
 
 }
 
-.header__menu-list {
-
-	text-align: center;
-
-}
 
 
 
 .header__menu-item {
 	display: inline-block;
-	& + .header__menu-item {
-	padding-left: 45px;
+
+	&+.header__menu-item {
+		padding-left: 45px;
 	}
 }
 
@@ -47,7 +57,7 @@
 }
 
 
-	.header__menu-btn {
+.header__menu-btn {
 
 	color: #ffff;
 	background-color: $violet;
@@ -58,27 +68,49 @@
 	outline: none;
 	font-family: $default_font;
 	font-weight: 700;
-	margin-right: 40px;
 	margin-left: 45px;
+	width: 140px;
+
+
 	&:hover {
 		color: $violet;
 		background-color: #ffff;
-	}
+		border: 1px solid $violet;
 
 	}
 
-  @media only screen and (max-width : 992px) {
+}
+
+.btn__menu {
+	display: none;
+	width: 26px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: flex-end;
+	.btn-row {
+		height: 3px;
+		border-radius: 1px;
+		border-color: white;
+		&:first-child {
+			width: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 992px) {
 
 	.header__inner {
-	 align-items: flex-start;
-   height: 120px;
+		align-items: flex-start;
+		height: 120px;
 	}
 
-	.header__menu  {
-	margin-left: -45px;
-	margin-right: -45px;
-	margin-top: 80px;
-	width: 100%;
+	.header__menu {
+		margin-left: -45px;
+		margin-right: -45px;
+		margin-top: 80px;
+		width: 100%;
 	}
 
 	.header__menu-btn {
@@ -89,27 +121,51 @@
 	}
 
 	.header__logo {
-	margin-top: 20px;
+		margin-top: 20px;
 
 	}
+	.header__menu-list {
 
-
-	.header__menu-item {
-			padding-right: 22px;
-		& + .header__menu-item {
-	padding-left: 22px;
-	}
-			&:last-child {
-				padding-right: 0;
-
-			}
-		}
+	text-align: center;
 
 }
 
 
 
+	.header__menu-item {
+		padding-right: 22px;
+
+		&+.header__menu-item {
+			padding-left: 22px;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+@media only screen and (max-width : 767px) {
+//	padding-right: 5px;
+		& + .header__menu-item {
+	padding-left: 5px;
+	}
+
+}
+	@media only screen and (max-width : 480px) {
+		.header__menu {
+			ul {
+				display: none;
+			}
+		}
+		.btn__menu {
+			display: block;
+		}
+
+		.header__menu-btn {
+			padding: 12px 24px 12px 24;
+			width: 130px;
 
 
+		}
 
-
+	}

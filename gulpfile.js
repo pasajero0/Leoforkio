@@ -53,7 +53,7 @@ gulp.task('imagemin', () =>
 
 gulp.task('makedist', ['sass', 'minjs', 'imagemin'], () => {
 	gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'))
-	
+
 })
 
 gulp.task('devserver', ['makedist'], () => {
