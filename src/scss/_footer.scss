@@ -23,16 +23,22 @@
 		&:hover {
 			.footer__title_link {
 				color:  #8d81ac;
-				
+				img {
+					// content: url('../img/');
+				}
 				span {
 					color: #333333;
 				}
 			}
 		}
 		&_link {
+			display: flex;
+    	align-items: center;
 			color:  #333333;
 			text-decoration: none;
-
+			img {
+				margin-right: 18px;
+			}
 			span {
 				color:  #8d81ac;
 			}
@@ -116,6 +122,12 @@
 @mixin footerblock{
 	text-align: justify;
 	width: 290px;
+}
+
+@media only screen and (max-width: 400px){
+	.footer__title_link img {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {
