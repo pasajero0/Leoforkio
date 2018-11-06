@@ -1,37 +1,46 @@
 .callback {
 	background: #e9e9e9;
-}
-.callback__form {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.callback__title {
-	text-align: center;
-	font-weight: 600;
-	font-size: 30px;
-	color: #635c73;
-	margin-right: 70px;
-}
-@mixin input-btn {
-	border-radius: 50px;
-	border: none;
-	outline: none;
-	font-size: 14px;
-	padding: 12px 30px;
-	box-sizing: border-box;
-}
-.callback__input {
-	@include input-btn;
-	margin-right: 20px;
-}
-.callback__btn {
-	@include input-btn;
-	padding: 12px 32px;
-	background: $violet;
-	cursor: pointer;
-	color: #fff;
+	
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__title {
+		text-align: center;
+		font-weight: 600;
+		font-size: 30px;
+		color: #635c73;
+		margin-right: 70px;
+	}
+	@mixin input-btn {
+		border-radius: 50px;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		padding: 12px 30px;
+		box-sizing: border-box;
+	}
+	&__input {
+		@include input-btn;
+		margin-right: 20px;
+	}
+	&__btn {
+		@include input-btn;
+		padding: 12px 32px;
+		background: $violet;
+		border: 1px solid transparent;
+		cursor: pointer;
+		color: #fff;
+		transition: .2s;
+
+		&:hover {
+			background: #fff;
+			border-color: $violet;
+			color: $violet;
+		}
+	}
 }
 
 //=====================================================================
@@ -43,12 +52,8 @@
 }
 @media only screen and (max-width: 480px){
 	.callback__title {
-		// content: 'Subcribe To Stay In Touch';
 		color: #333;
 	}
-	// .callback__btn {
-	// 	content: 'Subcribe';
-	// }
 }
 @media only screen and (min-width: 401px) and (max-width: 480px) {
 	.callback__title {
@@ -95,7 +100,7 @@
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 	.callback__input {
-		width: 25vw;
+		width: 24vw;
 	}
 }
 @media only screen and (min-width: 1200px) {

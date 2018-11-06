@@ -1,7 +1,6 @@
 .whatYouGet {
   background-color: #f4f4f4;
   overflow: hidden;
-  height: 700px;
 
   .container {
     // display: grid;
@@ -11,26 +10,20 @@
     //   "whatYouGetBlocks img";
     // grid-template-rows: 50% 45%; 
   }
-  &__title {
-    // grid-area: title;
-    color:  #8d81ac;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 10px;
 
-    position: relative;
-    left: 50%;
-    top: 40px;
+  &__title {
+    color:  #8d81ac;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
   }
-  // .whatYouGetBlocks {
-  //   grid-area: whatYouGetBlocks;
-  // }
 
   .whatYouGetBlock {
     display: flex;
-    width: 41%;
     margin-left: 30px;
-    margin-bottom: 34px;
+    margin-right: 30px;
+    margin-bottom: 35px;
 
     &__imgcontainer {
       min-width: 110px;
@@ -57,19 +50,50 @@
     }
   }
   .sublime__img {
-    // grid-area: img;
-    width: 55vw;
-    position: relative;
-    left: 50%;
-    bottom: 440px;
+    width: 100vw;
   }
 }
 //==================================================================
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+  .whatYouGet .whatYouGetBlock {
+    flex-direction: column;
+    &__title {
+      margin-top: 23px;
+      text-align: center;
+    }
+  }
+}
 
 @media only screen and (min-width: 401px) and (max-width: 480px) {}
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {}
 
-@media only screen and (min-width: 993px) {}
+@media only screen and (min-width: 993px) {
+  .whatYouGet {
+    height: 700px;
+    &__title {
+      display: inline-block;
+      font-size: 4vw;
+      position: relative;
+      left: 50%;
+      top: 40px;
+    }
+    .whatYouGetBlock {
+      width: 41%;
+    }
+    .sublime__img {
+      width: 55vw;
+      position: relative;
+      left: 50%;
+      bottom: 440px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .whatYouGet__title {
+    font-size: 48px;
+  }
+}
+
 //==================================================================

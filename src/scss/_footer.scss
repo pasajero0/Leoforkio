@@ -15,79 +15,103 @@
 	.container :nth-child(even) {
 		margin-right: 0;
 	}
-}
-.footer__title {
-	color:  #333333;
-	font-size: 24px;
-	line-height: 17px;
-	margin-bottom: 35px;
-	span {
-		color:  #8d81ac;
+	&__title {
+		display: inline-block;
+		font-size: 24px;
+		margin-bottom: 35px;
+		
+		&:hover {
+			.footer__title_link {
+				color:  #8d81ac;
+				
+				span {
+					color: #333333;
+				}
+			}
+		}
+		&_link {
+			color:  #333333;
+			text-decoration: none;
+
+			span {
+				color:  #8d81ac;
+			}
+		}
+
 	}
-}
-@mixin footer-titles {
-	color:  #323232;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 28px;
-}
-@mixin subtitles {
-	color:  #848e97;
-	font-size: 14px;
-	font-weight: 400;
-}
-.footer__title-descr{
-	@include subtitles;
-	line-height: 21px;
-	margin-bottom: 35px;
-}
 
-.footer__nav-title{
-	@include footer-titles;
-	line-height: inherit;
-	margin-bottom: 15px;
-}
-.footer__nav {
-	margin-bottom: 35px;
-}
-.footer__nav a{
-	color:  #8d81ac;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 23px;
-	text-decoration: none;
-}
+	@mixin footer-titles {
+		color:  #323232;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+	}
+	@mixin subtitles {
+		color:  #848e97;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	&__title-descr{
+		@include subtitles;
+		line-height: 21px;
+		margin-bottom: 35px;
+	}
 
-.footer__telephone{
-	color:  #3f3f3f;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 28px;
-}
-.footer__telephone-descr{
-	@include subtitles;
-	font-size: 12px;
-	line-height: 28px;
-	margin-bottom: 30px;
-}
+	&__nav-title{
+		@include footer-titles;
+		line-height: inherit;
+		margin-bottom: 15px;
+	}
+	&__nav {
+		margin-bottom: 35px;
 
-.footer__city{
-	@include footer-titles;
-	margin-bottom: 15px;
-}
-.footer__address{
-	@include subtitles;
-	line-height: 23px;
-	margin-bottom: 35px;
-}
+		li:hover{
+			a {
+				text-decoration: underline;
+			}
+		}
 
-.footer__info-title {
-	@include footer-titles;
-	margin-bottom: 10px;
-}
-.footer__info-txt {
-	@include subtitles;
-	line-height: 23px;
+		a {
+			color:  #8d81ac;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 23px;
+			text-decoration: none;
+		}
+
+	}
+
+	&__telephone{
+		color:  #3f3f3f;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+	&__telephone-descr{
+		@include subtitles;
+		font-size: 12px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
+
+	&__city{
+		@include footer-titles;
+		margin-bottom: 15px;
+	}
+	&__address{
+		@include subtitles;
+		line-height: 23px;
+		margin-bottom: 35px;
+	}
+
+	&__info-title {
+		@include footer-titles;
+		margin-bottom: 10px;
+	}
+	&__info-txt {
+		@include subtitles;
+		line-height: 23px;
+	}
 }
 @mixin footerblock{
 	text-align: justify;
@@ -103,7 +127,7 @@
 	}
 	.footer__block{
 		@include footerblock;
-		margin: 0 35px;
+		margin: 0 30px;
 	}
 	@media only screen and (max-width: 680px){
 		.footer__block{
