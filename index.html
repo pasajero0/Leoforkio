@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>forkio</title>
+<title>Forkio</title>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400, 500, 700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+    <link rel="icon" href="dist/img/favicon.png" type="image/gif" sizes="20x23">
+
+
+
+
 </head>
 
 <body>
+
+
+
 
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a class="header__logo-link" href="#">
-                        <img class="header__logo-images" src="dist/img/logo.png" alt="logo">
-                        <!-- <p class="header__logo-text">Forkio</p> -->
-                    </a>
-                </div>
+                    <img class="header__logo-link" src="dist/img/logo.png">
+                    </div>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
@@ -40,9 +47,22 @@
                     </ul>
                 </nav>
                 <button class="header__menu-btn">Buy Now</button>
+                <div class="btn__menu">
+                	<div class="btn__row"></div>
+                	<div class="btn__row"></div>
+                	<div class="btn__row"></div>
+                </div>
             </div>
         </div>
     </header>
+
+    <div class="homepage">
+    	<div class="container">
+
+    	</div>
+    </div>
+
+
 
     <div class="whatYouGet">
         <div class="container">
@@ -98,49 +118,241 @@
         <div>
             <img class="sublime_img" src="dist/img/sublime.png" alt="">
         </div>
+    </div>
+    <!--end of what_you_get_block-->
 
-        <!--end of what_you_get_block-->
+    <div class="feedbackBlock">
+        <div class="container">
+            <div class="carousel one-time">
+                <div>
+                    <div class="user">
+                        <img class="user__img" src="dist/img/carousel_img1.png" alt="">
+                        <p class="user__personname">Steven Strange<br>
+                            <a class="user__nickname" href="#">@DoctorS</a>
+                        </p>
+                    </div>
+                    <p class="user__feedback"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in
+                        scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget
+                        eros.</p>
+                    <p class="counter"><span>2</span> hours ago</p>
+                </div>
 
-        <div class="feedback">
-            <div class="container">
-                <div class="carousel one-time">
-                    <div>
-                        <img class="carousel_img" src="dist/img/carousel_img1.png" alt="">
-                        <p class="carousel_personname">Steven Strange</p>
-                        <a href="#">@DoctorS</a>
-                        <p class="carousel_feedback">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean
-                            faucibus mollis risus. Praesent
-                            sit amet erat eget eros.</p>
+                <div>
+                    <div class="user">
+                        <img class="user__img" src="dist/img/carousel_img2.png" alt="">
+                        <p class="user__personname">John Newman<br>
+                            <a class="user__nickname" href="#">@Jnumann</a>
+                        </p>
                     </div>
-                    <div>
-                        <img class="carousel_img" src="dist/img/carousel_img1.png" alt="">
-                        <p class="carousel_personname">Steven Strange</p>
-                        <a href="#">@DoctorS</a>
-                        <p class="carousel_feedback">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean
-                            faucibus mollis risus.
-                            Praesent
-                            sit amet erat eget eros.</p>
+                    <p class="user__feedback"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque
+                        felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
+                    <p class="counter"><span>2</span> hours ago</p>
+                </div>
+
+                <div>
+                    <div class="user">
+                        <img class="user__img" src="dist/img/carousel_img3.png" alt="">
+                        <p class="user__personname">Lisa Truman <br>
+                            <a class="user__nickname" href="#">@DoctorS</a>
+                        </p>
                     </div>
-                    <div>
-                        <img class="carousel_img" src="dist/img/carousel_img1.png" alt="">
-                        <p class="carousel_personname">Steven Strange</p>
-                        <a href="#">@DoctorS</a>
-                        <p class="carousel_feedback">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean
-                            faucibus mollis risus.
-                            Praesentss
-                            sit amet erat eget eros.</p>
-                    </div>
+                    <p class="user__feedback"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque
+                        felis scelerisque in. Aenean faucibus mollis risus. Praesentss sit amet erat eget eros.</p>
+                    <p class="counter"><span>2</span> hours ago</p>
                 </div>
             </div>
 
+            <!-- social media buttons-->
 
+            <div class="followUs">
+                <div class="followUs__block">
+                    <button class="followUs__btn followUs_theme_git">
+                        <i class="fab fa-github"></i>
+                        <span class="followUs__text">GitHub</span>
+                    </button>
+                    <div class="counter"><span>7525</span> Followers</div>
+                </div>
+
+                <div class="followUs__block">
+                    <button class="followUs__btn followUs_theme_twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="followUs__text">Twitter</span>
+                    </button>
+                    <div class="counter"><span>135 625</span> Followers</div>
+                </div>
+
+                <div class="followUs__block">
+                    <button class="followUs__btn followUs_theme_fb">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="followUs__text">Facebook</span>
+                    </button>
+                    <div class="counter"><span>25 427</span> Subscribers</div>
+                </div>
+
+
+            </div>
         </div>
-        
+        <!--end of feedbackblock-->
+
+        <!--People are Talking About Fork-->
+
+        <section class="people-price">
+        	<div class="people">
+        	<div class="container">
+        		  <div class="people__title">People Are Talking About Fork</div>
+        			<div class="row">
+        				<div class="people__logo">
+        					<img src="src/img/smashing_logo1.png" alt="logo">
+        					<div class="people__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </div>
+        				</div>
+        				<div class="people__logo">
+        					<img src="src/img/codrops_logo2.png" alt="logo">
+        					<div class="people__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</div>
+        				</div>
+        				<div class="people__logo">
+        					<img src="src/img/w_logo3.png" alt="logo">
+        					<div class="people__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </div>
+        				</div>
+							</div>
+        			<div class="row">
+        				<div class="people__logo">
+        					<img src="src/img/hat_logo4.png" alt="logo">
+               		<img src="src/img/pixelbuddha_logo4.png" alt="logo">
+                	<div class="people__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</div>
+        				</div>
+        				<div class="people__logo">
+        					<img src="src/img/creativebloq_logo5.png" alt="logo">
+        					<div class="people__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </div>
+        				</div>
+        				<div class="people__logo">
+        					<img src="src/img/tnw_logo6.png"
+        					 alt="logo">
+        					<div class="people__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</div>
+        				</div>
+        			</div>
+        			<div class="people__sup-title">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>
+        		</div>
+
+        		<!--Fork Subscription Pricing-->
+
+        		<div class="price">
+        		<div class="container">
+        			<div class="price__title">Fork Subscription Pricing</div>
+        			<div class="price__items"></div>
+        			<div class="price__item">
+        				<div class="price__item-title">Students</div>
+        				<div class="price__item-number">$29</div>
+        				<div class="price__item-date">per month</div>
+        				<div class="price__item"></div>
+        				<div class="price__item-text">Personal License</div>
+        				<div class="price__item-btn"><a href="#">purchase</a></div>
+        			</div>
+        			<div class="price__item">
+        				<div class="price__item-title">professional</div>
+        				<div class="price__item-number">$59</div>
+        				<div class="price__item-date">per month</div>
+        				<div class="price__item"></div>
+        				<div class="price__item-text">Professional License
+                Email Support</div>
+        				<div class="price__item-btn"><a href="#">purchase</a></div>
+        			</div>
+        			<div class="price__item">
+        				<div class="price__item-title">agency</div>
+        				<div class="price__item-number">$99</div>
+        				<div class="price__item-date">per month</div>
+        				<div class="price__item"></div>
+        				<div class="price__item-text">1-12 Team Members
+								Phone Support</div>
+        				<div class="price__item-btn"><a href="#">purchase</a></div>
+        			</div>
+        			<div class="price__item">
+        				<div class="price__item-title">enterprise</div>
+        				<div class="price__item-number">$159</div>
+        				<div class="price__item-date">per month</div>
+        				<div class="price__item"></div>
+        				<div class="price__item-text">Unlimited Team Members
+								24/ 7 Phone Support</div>
+        				<div class="price__item-btn"><a href="#">purchase</a></div>
+        			</div>
+        		</div>
+        	</div>
+					</div>
+        </section>
+
+        <!--end of Fork Subscription Pricing-->
+
+
+        <div class="subscribe_section">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="subscribe__header"></div>
+                    <div class="form">
+                        <input class="form__input" type="text" placeholder="Your name">
+                        <input class="form__input" type="tel" name="" id="" placeholder="Phone">
+                        <input class="header__menu-btn form__submit" type="submit" value="subscribe">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-div">
+                        <img class="footer-div__defaultLogo" src="dist/img/footer_logo.png" alt="">
+                        <img class="footer-div__shortLogo" src="dist/img/footer_logo_short.png" alt="">
+                        <p class="footer-div__text">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no
+                            quo.</p>
+                    </div>
+                    <div class="footer-div footer-div__ul">
+                        <h3 class="footer-div__header">Navigation</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Buying Options</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-div">
+                        <h3 class="footer-div__tel">347 567 78 90</h3>
+                        <p class="footer-div__text">AVAILABLE AT 12PM - 18PM</p>
+                        <h3 class="footer-div__header">New York, NY</h3>
+                        <p class="footer-div__text">560 Judah St & 15th Ave, Apt 5
+                            San Francisco, CA, 230903</p>
+                    </div>
+                    <div class="footer-div">
+                        <h3 class="footer-div__header">Info</h3>
+                        <p class="footer-div__text">Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                            suscipit lobortis nisl ut
+                            aliquip ex commodo
+                            consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <!-- <script type="text/javascript" src="src/js/slick.min.js"></script>
-        <script type="text/javascript" src="src/js/slick-settings.js"></script> -->
+        <script type="text/javascript" src="dist/js/slick.min.js"></script>
         <script type="text/javascript" src="dist/js/script.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.one-time').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 400,
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                });
+            })
+        </script>
 </body>
 
 </html>
