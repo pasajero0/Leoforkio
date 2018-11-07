@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>forkio</title>
+  <title>Forkio</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.min.css">
@@ -13,12 +13,50 @@
 
 <body>
 
+  <header class="header">
+      <div class="container">
+          <div class="header__inner">
+              <div class="header__logo">
+                  <img class="header__logo-link" src="dist/img/logo.png">
+                  </div>
+              <nav class="header__menu">
+                  <ul class="header__menu-list">
+                      <li class="header__menu-item">
+                          <a class="header__menu-link" href="#">Overview</a>
+                      </li>
+                      <li class="header__menu-item">
+                          <a class="header__menu-link" href="#">About Fork</a>
+                      </li>
+                      <li class="header__menu-item">
+                          <a class="header__menu-link" href="#">Buying Options</a>
+                      </li>
+                      <li class="header__menu-item">
+                          <a class="header__menu-link" href="#">Support</a>
+                      </li>
+                  </ul>
+              </nav>
+              <button class="header__menu-btn">Buy Now</button>
+              <div class="btn__menu">
+              	<div class="btn__row"></div>
+              	<div class="btn__row"></div>
+              	<div class="btn__row"></div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="homepage">
+  	<div class="container">
+
+  	</div>
+  </div>
+
+  <!-- task2 part -->    
   <section class="whatYouGet">
     <div class="container">
         <h3 class="whatYouGet__title">
           &#60Here is what you get&#62
         </h3>
-        
         <div class="whatYouGetBlock">
           <div class="whatYouGetBlock__imgcontainer">
             <img class="whatYouGetBlock__img" src="dist/img/advantage1.png" alt="">
@@ -63,16 +101,14 @@
             iaculis mi gravida luctus. Aliquam erat volutpat.</p>
           </div>
         </div>
-
         <img class="sublime__img" src="dist/img/sublime.png" alt="">
-
       </div>
-  </section>
+  </section>    
 
   <section class="feedback">
     <div class="container">
-      <div id="slider" class="slider">
 
+      <div id="slider" class="slider">
         <div class="slide">
           <div class="slide__userinfo">
             <img class="slide__img" src="dist/img/carousel_img1.png" alt="">
@@ -85,7 +121,6 @@
           sit amet erat eget eros.</p>
           <p class="slide__time">2 hours ago</p>
         </div>
-
         <div class="slide">
           <div class="slide__userinfo">
             <img class="slide__img" src="dist/img/carousel_img1.png" alt="">
@@ -98,7 +133,6 @@
           sit amet erat eget eros.</p>
           <p class="slide__time">2 hours ago</p>
         </div>
-
       </div>
       <div class="slider__line"></div>
 
@@ -127,11 +161,94 @@
       </div>
     </div>
   </section>
+  <!-- end of task2 part -->
+
+  <!--People are Talking About Fork-->
+
+  <section class="people-price">
+  	<div class="people">
+  	<div class="container">
+  		  <div class="people__title">People Are Talking About Fork</div>
+  			<div class="row">
+  				<div class="people__logo">
+  					<img src="src/img/smashing_logo1.png" alt="logo">
+  					<div class="people__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </div>
+  				</div>
+  				<div class="people__logo">
+  					<img src="src/img/codrops_logo2.png" alt="logo">
+  					<div class="people__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</div>
+  				</div>
+  				<div class="people__logo">
+  					<img src="src/img/w_logo3.png" alt="logo">
+  					<div class="people__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </div>
+  				</div>
+				</div>
+  			<div class="row">
+  				<div class="people__logo">
+  					<img src="src/img/hat_logo4.png" alt="logo">
+         		<img src="src/img/pixelbuddha_logo4.png" alt="logo">
+          	<div class="people__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</div>
+  				</div>
+  				<div class="people__logo">
+  					<img src="src/img/creativebloq_logo5.png" alt="logo">
+  					<div class="people__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </div>
+  				</div>
+  				<div class="people__logo">
+  					<img src="src/img/tnw_logo6.png"
+  					 alt="logo">
+  					<div class="people__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</div>
+  				</div>
+  			</div>
+  			<div class="people__sup-title">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>
+  		</div>
+
+  		<!--Fork Subscription Pricing-->
+
+  		<div class="price">
+  		<div class="container">
+  			<div class="price__title">Fork Subscription Pricing</div>
+  			<div class="price__items"></div>
+  			<div class="price__item">
+  				<div class="price__item-title">Students</div>
+  				<div class="price__item-number">$29</div>
+  				<div class="price__item-date">per month</div>
+  				<div class="price__item"></div>
+  				<div class="price__item-text">Personal License</div>
+  				<div class="price__item-btn"><a href="#">purchase</a></div>
+  			</div>
+  			<div class="price__item">
+  				<div class="price__item-title">professional</div>
+  				<div class="price__item-number">$59</div>
+  				<div class="price__item-date">per month</div>
+  				<div class="price__item"></div>
+  				<div class="price__item-text">Professional License
+          Email Support</div>
+  				<div class="price__item-btn"><a href="#">purchase</a></div>
+  			</div>
+  			<div class="price__item">
+  				<div class="price__item-title">agency</div>
+  				<div class="price__item-number">$99</div>
+  				<div class="price__item-date">per month</div>
+  				<div class="price__item"></div>
+  				<div class="price__item-text">1-12 Team Members
+					Phone Support</div>
+  				<div class="price__item-btn"><a href="#">purchase</a></div>
+  			</div>
+  			<div class="price__item">
+  				<div class="price__item-title">enterprise</div>
+  				<div class="price__item-number">$159</div>
+  				<div class="price__item-date">per month</div>
+  				<div class="price__item"></div>
+  				<div class="price__item-text">Unlimited Team Members
+					24/ 7 Phone Support</div>
+  				<div class="price__item-btn"><a href="#">purchase</a></div>
+  			</div>
+  		</div>
+  	</div>
+		</div>
+  </section>
   
-  <!-- <section class="about"></section> -->
-
-  <!-- <section class="price"></section> -->
-
+  <!-- task2 part -->
   <section class="callback">
     <div class="container">
       <form action="" class="callback__form">
@@ -174,6 +291,7 @@
       </div>
     </div>
   </footer>
+  <!-- end of task2 part -->
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
