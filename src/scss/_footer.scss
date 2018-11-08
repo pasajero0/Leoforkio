@@ -24,7 +24,7 @@
 			.footer__title_link {
 				color:  #8d81ac;
 				img {
-					// content: url('../img/');
+					content: url('../img/footer_logo_hover.png');
 				}
 				span {
 					color: #333333;
@@ -36,6 +36,7 @@
     	align-items: center;
 			color:  #333333;
 			text-decoration: none;
+			// transition: .2s;
 			img {
 				margin-right: 18px;
 			}
