@@ -53,29 +53,31 @@ width: 151px;
 
 	&:hover {
 		color: #ffff;
+
 	}
 }
 
 
 .header__menu-btn {
 
-	color: #ffff;
-	background-color: $violet;
-	padding: 12px 35px 12px 35px;
-	border-radius: 20px;
-	display: inline-block;
-	border: none;
-	outline: none;
-	font-family: $default_font;
-	font-weight: 700;
-	margin-left: 45px;
-	width: 140px;
+    border: 1px solid #8d81ac;
+    color: #ffff;
+    background-color: #8d81ac;
+    padding: 12px 35px 12px 35px;
+    border-radius: 20px;
+    display: inline-block;
+    /* border: none; */
+    outline: none;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    margin-left: 45px;
+    cursor: pointer;
 
 
 	&:hover {
 		color: $violet;
 		background-color: #ffff;
-		border: 1px solid $violet;
+
 
 	}
 
