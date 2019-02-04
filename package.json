@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcode1983/Leoforkio.git"
+    "url": "git+https://github.com/valentina532/forkio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dcode1983/Leoforkio/issues"
+    "url": "https://github.com/valentina532/forkio/issues"
   },
-  "homepage": "https://github.com/dcode1983/Leoforkio#readme",
+  "homepage": "https://github.com/valentina532/forkio#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -24,11 +24,14 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^4.0.2",
     "gulp-sequence": "^1.0.0",
-    "gulp-uglify": "^3.0.1"
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {}
 }
