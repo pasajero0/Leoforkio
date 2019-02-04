@@ -1,8 +1,7 @@
 $(document).ready(function () {
-  $('.one-time').slick({
-    dots: true,
+  $('#slider').slick({
     infinite: true,
-    speed: 300,
+    speed: 400,
     slidesToShow: 1,
     adaptiveHeight: true
   });

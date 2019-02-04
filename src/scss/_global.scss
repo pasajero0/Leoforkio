@@ -3,29 +3,31 @@ body {
 	font-weight: 700;
 	font-size: 16px;
 	color: $main_color;
-
-
 }
 
 .container {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 15px;
-
 }
 
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 	padding-left: 20px;
 	padding-right: 20px;
-
 }
 
-ul,
-
-li {
+ul, li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+@media only screen and (max-width: 400px) {}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {}
+
+@media only screen and (min-width: 993px) {}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
