@@ -4,10 +4,9 @@
 
 # testing
 /coverage
+/build 
 
 # production
-/build
 
 Gulp install instructions.txt
 testfile.txt
-/dist/
